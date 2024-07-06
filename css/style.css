@@ -1,0 +1,160 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    background-color: #000000;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #ffffff;
+    width: 80vw;
+    margin: 0 auto;
+}
+
+a{
+    color: #847d95;
+    text-decoration: none;
+}
+
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h3{
+    margin: 10px 0;
+    font-size: 1.5em;
+}
+
+.header{
+    background-color: #D9AFD9;
+    background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+    min-height: 80vh;
+    max-width: 100vw;
+}
+
+.header li{
+    list-style-type: none;
+    padding: 20px;
+}
+
+.top_nav{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: black;
+}
+
+.top_nav ul li{
+    display: inline;
+}
+
+.banner{
+    width: 100%;
+    height: 79vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner #welcome_note{
+    /* border: 1px solid red; */
+    height: 20vh;
+    width: fit-content;
+    padding: 10px;
+}
+
+#welcome_note h1{
+    font-size: 72px;
+    background: -webkit-linear-gradient(#5f6872, #2a6a86);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+#row2{
+    background-color: #ffffff;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+/* #row2 h3{
+    text-align: center;
+} */
+
+#row2 p{
+    padding: 20px;
+    width: 50vw;
+    margin: 0 auto;
+    /* margin: 10px; */
+    color: #5f6872;
+}
+
+#row3 {
+    padding: 10px 20px;
+    text-align: center;
+    /* width: 90%; */
+    margin: 10px auto;
+}
+
+.flex_box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flex_box>div {
+    background-color: #D9AFD9;
+    background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+    border-radius: 5px;
+    margin: 10px;
+    padding: 15px;
+}
+
+.flex_container{
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    background-color: #ffffff;
+    color: #5f6872;
+    padding: 15px;
+    font-size: 1.1em;
+}
+
+.flex_container>div{
+    width: 50%;
+}
+
+.flex_container>#slack_cred{
+    /* width: 50% ; */
+    display: flex;
+    margin: 10px auto;
+}
+
+.box {
+    width: 150px;
+}
+
+.image {
+    width: 100%;
+}
+
+footer{
+    color: #4d4646;
+}
+footer h4{
+    text-align: center;
+}
+
+
+
+/* Responsive layout */
+@media (max-width: 700px) {
+    .banner {
+        flex-direction: column;
+        height: fit-content;
+    }
+}
